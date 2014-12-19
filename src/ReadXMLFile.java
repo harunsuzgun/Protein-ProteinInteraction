@@ -13,15 +13,17 @@ import java.util.ArrayList;
 public class ReadXMLFile {
 
     public static void main(String argv[]) {
+//
+//        String xmlUrl = "C:\\Users\\Celebi\\Desktop\\Downloads\\allppis.xml";
+//        ArrayList<String> proteinIDs = XmlProcessor.RetrieveProteinIDs(xmlUrl);
+//
+//        ProteinParser parser = new ProteinParser();
+//
+//        ArrayList<Protein> proteins = new ArrayList<Protein>();
+//        for(String id:proteinIDs)
+//            proteins.add(parser.getProtein(id));
 
-        String xmlUrl = "C:\\Users\\Celebi\\Desktop\\Downloads\\allppis.xml";
-        ArrayList<String> proteinIDs = XmlProcessor.RetrieveProteinIDs(xmlUrl);
 
-        ProteinParser parser = new ProteinParser();
-
-        ArrayList<Protein> proteins = new ArrayList<Protein>();
-        for(String id:proteinIDs)
-            proteins.add(parser.getProtein(id));
 
 
 
