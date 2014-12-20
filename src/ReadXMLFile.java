@@ -13,18 +13,9 @@ import java.util.ArrayList;
 public class ReadXMLFile {
 
     public static void main(String argv[]) {
-//
-//        String xmlUrl = "C:\\Users\\Celebi\\Desktop\\Downloads\\allppis.xml";
-//        ArrayList<String> proteinIDs = XmlProcessor.RetrieveProteinIDs(xmlUrl);
-//
-//        ProteinParser parser = new ProteinParser();
-//
-//        ArrayList<Protein> proteins = new ArrayList<Protein>();
-//        for(String id:proteinIDs)
-//            proteins.add(parser.getProtein(id));
 
-
-
+        DIPParser parser = new DIPParser("D:\\fastaseq\\fasta20131201.seq","D:\\fasta20131201.seq\\dip20141001.txt");
+        ArrayList<DIPProtein> proteins = parser.RetrieveProteins();
 
 
     }
