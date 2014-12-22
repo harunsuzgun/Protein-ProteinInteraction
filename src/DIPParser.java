@@ -75,7 +75,26 @@ public class DIPParser {
         return proteins;
     }
 
+    public ArrayList<Interaction> RetrieveInteractions()
+    {
+        ArrayList<Interaction> interactions = new ArrayList<Interaction>();
+        Path p1 = Paths.get(this.sequencesPath);
+        String fileContent = new String();
 
+        try{
+
+            fileContent = Files.readAllLines(p1,ENCODING).toString();
+            fileContent= fileContent.substring(1);
+        }
+        catch (IOException e)
+        {
+            System.out.println("Fail");
+
+        }
+
+
+        return interactions;
+    }
 
 
 }
